@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cartitem{
+  display: flex;
+  width:500px;
+  background-color:yellow;
+  height:250px;
+}
+.leftblock{
+  width:250px;
+  height:250px;
+  background-color:red;
+}
+.rightblock{
+  width:250px;
+  height:250px;
+  background-color:grey;
+}
+.title{
+  margin-top:15px;
+  font-size:50px;
+}
+.price{
+  margin-top:15px;
+  font-size:30px;
+}
+.Qty{
+  margin-top:15px;
+  font-size:30px;
+}
+.cartitem-actions img{
+  margin:15px;
+}
+.cartitem-actions img:hover{
+  cursor:pointer;
+}
