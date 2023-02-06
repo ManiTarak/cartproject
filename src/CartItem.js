@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class CartItem extends React.Component{
   constructor(){
     super();
@@ -8,51 +9,13 @@ class CartItem extends React.Component{
       price:999,
       qty:1
     }
-    this.testing();
   }
-  //testing() is not a eventhandler
-  //testing is used to see whether setstate() acts as asynchronous and react renders UI only once not how many times setstate executed
-  testing(){
-    var promise=new Promise((resolve,reject)=>{
-      setTimeout((resolve("done")),5000000)}
-    );
-    promise.then(()=>{
-      this.setState({
-        qty:this.state.qty+200
-      })
-      this.setState({
-        qty:this.state.qty+200
-      })
-      this.setState({
-        qty:this.state.qty+200
-      })
-      console.log(this.state);
-    })
-   
-  }
+  
   //in event handlers batching happening and UI renders only once(whenever the event handler called )
   increaseQuantity=()=>{
    this.setState({
     qty:this.state.qty+1
    });
-   this.setState({
-    qty:this.state.qty+1
-   });
-   this.setState({
-    qty:this.state.qty+1
-   });
-   this.setState((prevstate)=>{
-    return ({
-      qty: prevstate.qty+1
-    })
-  });this.setState((prevstate)=>{
-    return ({
-      qty: prevstate.qty+3
-    })
-  },()=>{
-    console.log(this.state.qty);
-  });
-
   }
   decreaseQuantity=()=>{
     const {qty}=this.state;

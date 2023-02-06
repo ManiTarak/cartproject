@@ -15,6 +15,7 @@ code {
 .cartitem{
   display: flex;
   width:500px;
+  margin:5px;
   background-color:yellow;
   height:250px;
 }
@@ -45,4 +46,9 @@ code {
 }
 .cartitem-actions img:hover{
   cursor:pointer;
+}
+.cartClass{
+  display:flex;
+  flex-direction: column;
+ 
 }
