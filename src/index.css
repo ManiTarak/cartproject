@@ -52,3 +52,15 @@ code {
   flex-direction: column;
  
 }
+.Navbardiv{
+  display:flex;
+  justify-content: flex-end;
+  margin:20px 30px 0px 0px ;
+  padding:10px;
+}
+.Navbardiv span{
+  font-size:20px;
+  background-color:yellow;
+  border:2px solid black;
+  border-radius:50%;
+}

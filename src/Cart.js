@@ -1,14 +1,13 @@
 import React from 'react';
 import CartItem from "./CartItem.js"
 
-class Cart extends React.Component{
-    
-  render(){
-    return(<div style={{"margin":"10px"}}>
-        <CartItem/>
-        <CartItem/>
-
-    </div>);
-  }
+const Cart=(props)=>{
+    const {product}=props;
+    console.log("cart",props);
+    return(<div>
+        {
+        product.map((product)=>{return(<CartItem product={product} key={product.id} increaseQuantity={props.increaseQuantity} decreaseQuantity={props.decreaseQuantity} deleteItem={props.deleteItem}/>);})
+        }
+        </div>);
 }
 export default Cart;
