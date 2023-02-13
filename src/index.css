@@ -64,3 +64,8 @@ code {
   border:2px solid black;
   border-radius:50%;
 }
+.Footerdiv{
+  font-size:50px;
+  font-style:bold;
+  margin:50px;
+}

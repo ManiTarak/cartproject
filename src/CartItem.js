@@ -3,10 +3,9 @@ import React from 'react';
 
 const CartItem = (props) => {
     const {product}=props;
-    console.log("cartItem",props);
     return (<div className="cartitem">
         <div className="leftblock">
-            <img/>
+        <img src="{props.img}"  height="250px" width="250px"></img>
         </div>
         <div className="rightblock">
             <div className="title">{product.title}</div>
