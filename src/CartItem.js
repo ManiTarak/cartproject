@@ -5,7 +5,7 @@ const CartItem = (props) => {
     const {product}=props;
     return (<div className="cartitem">
         <div className="leftblock">
-        <img src="{props.img}"  height="250px" width="250px"></img>
+        <img src={product.img}  height="250px" width="250px"></img>
         </div>
         <div className="rightblock">
             <div className="title">{product.title}</div>
