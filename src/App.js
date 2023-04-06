@@ -69,11 +69,29 @@ handleDecreaseQuantity : (product)=>{
 }
 componentDidMount(){
   // getting data from firebase 
+  // firebase
+  // .firestore()
+  // .collection('Products')
+  // .get()
+  // .then((snapshot)=>{
+  //   const products=(snapshot.docs.map((doc)=>{
+  //     const d = doc.data();
+  //     d.id=doc.id;
+  //     return d;
+  //   }));
+    
+  //   this.setState((prevState)=>{
+  //  return {
+  //     products:products,
+  //     loading:false
+  //   }});
+
+  // })
   firebase
   .firestore()
   .collection('Products')
-  .get()
-  .then((snapshot)=>{
+  //listener
+  .onSnapshot((snapshot)=>{
     const products=(snapshot.docs.map((doc)=>{
       const d = doc.data();
       d.id=doc.id;
